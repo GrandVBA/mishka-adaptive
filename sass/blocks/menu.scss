@@ -1,0 +1,41 @@
+.menu {
+  background-image: url('../../img/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  .menu-title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .menu__list {
+    .menu__link{
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .menu__link--interior {
+      background-color: #63d1bb;
+      &:hover,
+      &:focus {
+        background-color: #59d5bc;
+      }
+      &:active {
+        color: #6ed9c3;
+      }
+    }
+    .menu__link--toys {
+      background-color: #56c3b2;
+      &:hover,
+      &:focus {
+        background-color: #46c1ae;
+      }
+      &:active {
+        color: #6ed9c3;
+      }
+    }
+  }
+}

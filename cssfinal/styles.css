@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  background-color: #ffffff; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*ниже стилитолько для ссылок*/
+.main-header__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none; }
+  .main-header__link:hover, .main-header__link:focus {
+    opacity: 0.6; }
+  .main-header__link:active {
+    opacity: 0.3; }
+
+.menu {
+  background-image: url("../../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+  .menu .menu-title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700; }
+  .menu .menu__list .menu__link {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none; }
+  .menu .menu__list .menu__link--interior {
+    background-color: #63d1bb; }
+    .menu .menu__list .menu__link--interior:hover, .menu .menu__list .menu__link--interior:focus {
+      background-color: #59d5bc; }
+    .menu .menu__list .menu__link--interior:active {
+      color: #6ed9c3; }
+  .menu .menu__list .menu__link--toys {
+    background-color: #56c3b2; }
+    .menu .menu__list .menu__link--toys:hover, .menu .menu__list .menu__link--toys:focus {
+      background-color: #46c1ae; }
+    .menu .menu__list .menu__link--toys:active {
+      color: #6ed9c3; }

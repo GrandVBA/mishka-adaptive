@@ -1,0 +1,19 @@
+
+
+/*ниже стилитолько для ссылок*/
+.main-header__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $title-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
