@@ -1,0 +1,53 @@
+.reviews-title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $title-color;
+}
+
+.reviews__name {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.reviews__id {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #63d1bb;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.reviews__text {
+  line-height: 30px;
+}
+
+.reviews__button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $title-color;
+  text-decoration: none;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+    border-color: #444444;
+    &:active {
+      color: #7c7c7c;
+    }
+  }
+}
