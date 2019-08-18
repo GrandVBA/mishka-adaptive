@@ -51,3 +51,41 @@ img {
       background-color: #46c1ae; }
     .menu .menu__list .menu__link--toys:active {
       color: #6ed9c3; }
+
+.product-week__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000; }
+  .product-week__title span {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #63d1bb; }
+
+.product-week__options {
+  line-height: 20px; }
+
+.product-week__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center; }
+
+.product-week__button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+  .product-week__button:hover, .product-week__button:focus {
+    color: #ffffff;
+    background-color: #444444;
+    border-color: #444444; }
+  .product-week__button:active {
+    color: #7c7c7c; }
