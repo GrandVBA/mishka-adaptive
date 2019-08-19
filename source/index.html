@@ -9,25 +9,25 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-header__nav">
-        <ul class="main-header__list">
-          <li class="main-header__item main-header__item--logo">
-            <p class="main-header__logo visually-hidden">Мишка</p>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="#">Корзина: <span class="main-header__link--basketvalue">пока пуста</span></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo visually-hidden" href="#">Мишка</a>
+        <nav class="main-header__nav">
+          <ul class="main-header__list">
+            <li class="main-header__item main-header__item--catalog">
+              <a class="main-header__link main-header__link--catalog" href="#">Каталог товаров</a>
+            </li>
+            <li class="main-header__item main-header__item--order">
+              <a class="main-header__link main-header__link--order" href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-header__item main-header__item--search">
+              <a class="main-header__link main-header__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-header__item main-header__item--basket">
+              <a class="main-header__link main-header__link--basket" href="#">Корзина: <span class="main-header__link--basketvalue">пока пуста</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">

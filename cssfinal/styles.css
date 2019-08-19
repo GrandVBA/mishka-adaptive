@@ -13,17 +13,93 @@ img {
   max-width: 100%;
   height: auto; }
 
-/*ниже стилитолько для ссылок*/
-.main-header__link {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none; }
-  .main-header__link:hover, .main-header__link:focus {
-    opacity: 0.6; }
-  .main-header__link:active {
-    opacity: 0.3; }
+.main-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto; }
+  .main-header__wrapper .main-header__logo {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    min-height: 80px; }
+  .main-header__wrapper .main-header__nav {
+    min-height: 315px; }
+    .main-header__wrapper .main-header__nav .main-header__list {
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      list-style: none;
+      /*ниже стилитолько для ссылок*/ }
+      .main-header__wrapper .main-header__nav .main-header__list .main-header__link {
+        display: block;
+        min-height: 50px;
+        padding-top: 28px;
+        padding-left: 47px;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link:hover, .main-header__wrapper .main-header__nav .main-header__list .main-header__link:focus {
+          opacity: 0.6; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link:active {
+          opacity: 0.3; }
+
+@media (min-width: 768px) {
+  .main-header {
+    height: 88px; }
+  .main-header__wrapper {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 668px;
+    padding: 0 50px; }
+    .main-header__wrapper .main-header__logo {
+      width: 167px;
+      height: 88px;
+      margin-right: 157px; }
+    .main-header__wrapper .main-header__nav {
+      min-height: 88px; }
+      .main-header__wrapper .main-header__nav .main-header__list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link {
+          min-height: 60px; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--catalog {
+          position: absolute;
+          padding-top: 14px;
+          min-height: 35px;
+          left: 4px;
+          top: 88px; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--order {
+          position: absolute;
+          padding-top: 14px;
+          min-height: 35px;
+          left: 200px;
+          top: 88px; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--basket {
+          width: 265px; }
+        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--search {
+          visibility: hidden; } }
 
 .menu {
   background-image: url("../../img/hero-mobile.jpg");
@@ -74,7 +150,6 @@ img {
   color: #000000;
   text-align: center; }
 
-/*СОКРАТИТЬ КОД ДЛЯ КНОПОК (ПОДОДИН КЛАСС button)*/
 .product-week__button {
   font-size: 17px;
   line-height: 20px;
@@ -127,7 +202,6 @@ img {
 .reviews__text {
   line-height: 30px; }
 
-/*СОКРАТИТЬ КОД ДЛЯ КНОПОК (ПОДОДИН КЛАСС button)*/
 .reviews__button {
   font-size: 17px;
   line-height: 20px;
@@ -163,7 +237,6 @@ img {
     .contacts__table a:active {
       opacity: 0.3; }
 
-/*СОКРАТИТЬ КОД ДЛЯ КНОПОК (ПОДОДИН КЛАСС button)*/
 .contacts__button {
   font-size: 17px;
   line-height: 20px;
