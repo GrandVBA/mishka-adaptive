@@ -13,120 +13,129 @@ img {
   max-width: 100%;
   height: auto; }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px; }
+
 .main-header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 260px;
-  padding: 0 30px;
+  width: 320px;
+  /*padding: 0 30px;*/
   margin: 0 auto; }
-  .main-header__wrapper .main-header__logo {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-    min-height: 80px; }
-  .main-header__wrapper .main-header__nav {
-    min-height: 315px; }
-    .main-header__wrapper .main-header__nav .main-header__list {
-      margin: 0;
-      padding: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-      list-style: none;
-      /*ниже стилитолько для ссылок*/ }
-      .main-header__wrapper .main-header__nav .main-header__list .main-header__link {
-        display: block;
-        min-height: 50px;
-        padding-top: 28px;
-        padding-left: 47px;
-        font-size: 17px;
-        line-height: 24px;
-        font-weight: 700;
-        color: #000000;
-        text-decoration: none; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link:hover, .main-header__wrapper .main-header__nav .main-header__list .main-header__link:focus {
-          opacity: 0.6; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link:active {
-          opacity: 0.3; }
+
+.main-header__list {
+  margin: 0;
+  padding: 0;
+  min-height: 395px;
+  list-style: none; }
+
+.main-header__item {
+  min-height: 78px;
+  border-bottom: 1px solid #ececec; }
+
+.main-header__item--delivery {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px; }
+
+/*ниже стилитолько для ссылок*/
+.main-header__link {
+  display: block;
+  padding: 26px 0 0 76px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none; }
+  .main-header__link:hover, .main-header__link:focus {
+    opacity: 0.6; }
+  .main-header__link:active {
+    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .main-header {
-    height: 88px; }
+    width: 768px;
+    height: 88px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ececec; }
   .main-header__wrapper {
-    position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     width: 668px;
     padding: 0 50px; }
-    .main-header__wrapper .main-header__logo {
-      width: 167px;
-      height: 88px;
-      margin-right: 157px; }
-    .main-header__wrapper .main-header__nav {
-      min-height: 88px; }
-      .main-header__wrapper .main-header__nav .main-header__list {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link {
-          min-height: 60px; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--catalog {
-          position: absolute;
-          padding-top: 14px;
-          min-height: 35px;
-          left: 4px;
-          top: 88px; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--order {
-          position: absolute;
-          padding-top: 14px;
-          min-height: 35px;
-          left: 200px;
-          top: 88px; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--basket {
-          width: 265px; }
-        .main-header__wrapper .main-header__nav .main-header__list .main-header__link--search {
-          visibility: hidden; } }
+  .main-header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 150px; }
+  .main-header__item {
+    min-height: 88px;
+    border: none; }
+  .main-header__item--logo {
+    -webkit-box-ordinal-group: -2;
+    -ms-flex-order: -3;
+    order: -3;
+    width: 320px; }
+  .main-header__item--catalog {
+    min-height: 62px;
+    width: 167px; }
+  .main-header__item--order {
+    min-height: 62px;
+    width: 167px; }
+  .main-header__item--search {
+    width: 83px;
+    -webkit-box-ordinal-group: -1;
+    -ms-flex-order: -2;
+    order: -2; }
+  .main-header__item--basket {
+    width: 264px;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
+  .main-header__item--delivery {
+    position: static;
+    margin-left: auto;
+    min-height: 62px;
+    width: 265px; }
+  .main-header__delivery {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400; }
+  .main-header__link {
+    padding: 0; } }
 
 .menu {
   background-image: url("../../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0; }
-  .menu .menu-title {
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: 700; }
-  .menu .menu__list .menu__link {
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none; }
-  .menu .menu__list .menu__link--interior {
-    background-color: #63d1bb; }
-    .menu .menu__list .menu__link--interior:hover, .menu .menu__list .menu__link--interior:focus {
-      background-color: #59d5bc; }
-    .menu .menu__list .menu__link--interior:active {
-      color: #6ed9c3; }
-  .menu .menu__list .menu__link--toys {
-    background-color: #56c3b2; }
-    .menu .menu__list .menu__link--toys:hover, .menu .menu__list .menu__link--toys:focus {
-      background-color: #46c1ae; }
-    .menu .menu__list .menu__link--toys:active {
-      color: #6ed9c3; }
+
+.menu-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700; }
+
+.menu__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none; }
+
+.menu__link--interior {
+  background-color: #63d1bb; }
+  .menu__link--interior:hover, .menu__link--interior:focus {
+    background-color: #59d5bc; }
+  .menu__link--interior:active {
+    color: #6ed9c3; }
+
+.menu__link--toys {
+  background-color: #56c3b2; }
+  .menu__link--toys:hover, .menu__link--toys:focus {
+    background-color: #46c1ae; }
+  .menu__link--toys:active {
+    color: #6ed9c3; }
 
 .product-week__title {
   font-size: 25px;

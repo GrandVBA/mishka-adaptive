@@ -10,9 +10,11 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo visually-hidden" href="#">Мишка</a>
         <nav class="main-header__nav">
           <ul class="main-header__list">
+            <li class="main-header__item main-header__item--logo">
+              <a class="main-header__link main-header__link--logo" href="#">logo mishka</a>
+            </li>
             <li class="main-header__item main-header__item--catalog">
               <a class="main-header__link main-header__link--catalog" href="#">Каталог товаров</a>
             </li>
@@ -25,12 +27,15 @@
             <li class="main-header__item main-header__item--basket">
               <a class="main-header__link main-header__link--basket" href="#">Корзина: <span class="main-header__link--basketvalue">пока пуста</span></a>
             </li>
+            <li class="main-header__item main-header__item--delivery">
+              <p class="main-header__delivery">Бесплатная доставка по России</p>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <!--<main class="page-main">
 
       <section class="menu">
         <h1 class="menu-title">Милые штуки ручной работы для дома</h1>
