@@ -34,7 +34,9 @@ img {
   min-height: 78px;
   border-bottom: 1px solid #ececec; }
 
-.main-header__item--delivery {
+.main-header__item--delivery,
+.main-header__item--new,
+.main-header__item--sale {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -106,17 +108,75 @@ img {
   .main-header__link {
     padding: 0; } }
 
+@media (min-width: 1150px) {
+  .main-header {
+    width: 1250px; }
+  .main-header__wrapper {
+    width: 1050px;
+    padding: 0 50px; }
+  .main-header__list {
+    width: 1050px; }
+  .main-header__item--catalog {
+    -webkit-box-ordinal-group: -9;
+    -ms-flex-order: -10;
+    order: -10;
+    width: 225px; }
+  .main-header__item--logo {
+    width: 150px; }
+  .main-header__item--order {
+    -webkit-box-ordinal-group: -8;
+    -ms-flex-order: -9;
+    order: -9;
+    width: 225px; }
+  .main-header__item--basket {
+    /*margin-left: auto;*/ }
+  .main-header__item--search {
+    margin-left: auto; }
+  .main-header__item--new,
+  .main-header__item--sale {
+    position: static;
+    min-height: 62px;
+    width: 225px; }
+  .main-header__link--new,
+  .main-header__link--sale {
+    font-size: 15px;
+    line-height: 24px; } }
+
 .menu {
+  min-height: 489px;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0; }
+  background-position: 0 -15px;
+  /*background-size: 100%;*/ }
 
 .menu-title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 75px;
+  min-height: 105px;
+  width: 245px;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
+
+.menu__list {
+  margin: 0;
+  padding: 103px 0 0 0;
+  list-style: none;
+  width: 100%; }
+
+.menu__item {
+  min-height: 103px;
+  width: 100%; }
 
 .menu__link {
+  display: block;
+  min-height: 103px;
+  width: 100%;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -136,6 +196,47 @@ img {
     background-color: #46c1ae; }
   .menu__link--toys:active {
     color: #6ed9c3; }
+
+@media (min-width: 768px) {
+  .menu {
+    height: 733px;
+    width: 768px;
+    background-image: url("../../img/hero-desktop.jpg");
+    background-position: 0 0; }
+  .menu__wrapper {
+    width: 668px;
+    margin: 0 auto; }
+  .menu-title {
+    min-height: 105px;
+    width: 500px;
+    padding-top: 160px;
+    font-size: 43px;
+    line-height: 50px; }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 365px; }
+  .menu__item {
+    width: 334px; } }
+
+@media (min-width: 1150px) {
+  .menu {
+    width: 1250px;
+    background-position: center 0; }
+  .menu__wrapper {
+    width: 1050px; }
+  .menu-title {
+    min-height: 135px;
+    width: 610px;
+    font-size: 53px;
+    line-height: 57px; }
+  .menu__list {
+    padding-top: 335px; }
+  .menu__item {
+    width: 525px; } }
 
 .product-week__title {
   font-size: 25px;
