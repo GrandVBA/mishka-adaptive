@@ -7,6 +7,7 @@
 .product-week__wrapper {
   width: 260px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .product-week__title {
@@ -113,6 +114,11 @@
     }
   }
 
+  .product-week__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .product-week__flexcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -144,5 +150,51 @@
   .product-week__flexelement--submit {
     margin-top: -122px;
     width: 291px;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-week {
+    width: 1250px;
+    min-height: 800px;
+  }
+
+  .product-week__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .product-week__title {
+    position: absolute;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    span {
+      margin-left: -630px;
+    }
+  }
+
+  .product-week__options {
+    margin: 50px 0 0 0;
+  }
+
+  .product-week__image {
+    width: 525px;
+    height: 636px;
+
+    background-image: url('../../img/triple-set-desktop.jpg');
+  }
+
+  .product-week__flexelement--info {
+    margin-top: 160px;
+    margin-left: 175px;
+  }
+
+  .product-week__flexelement--submit {
+    margin-left: 175px;
   }
 }
