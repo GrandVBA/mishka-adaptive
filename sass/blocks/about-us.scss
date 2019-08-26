@@ -1,4 +1,18 @@
+.about-us {
+  min-height: 833px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-us__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .about-us__title {
+  margin: 20px 0 0 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -6,8 +20,79 @@
 }
 
 .about-us__list {
+  padding: 0;
+  list-style: none;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $title-color;
+}
+
+.about-us__item {
+  width: 100%;
+  min-height: 131px;
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 768px;
+    min-height: 655px;
+  }
+
+  .about-us__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  .about-us__title {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+  }
+
+  .about-us__item {
+    margin-top: 20px;
+    width: 50%;
+    min-height: 155px;
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1250px;
+    min-height: 690px;
+  }
+
+  .about-us__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .about-us__title {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+
+    width: 650px;
+  }
 }
