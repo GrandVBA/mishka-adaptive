@@ -152,45 +152,59 @@
       </section>
 
       <section class="contacts">
-        <h1 class="contacts__title">Контакты</h1>
+        <div class="contacts__wrapper">
+          <div class="contacts__wrapper--flexbox">
+            <h1 class="contacts__title">Контакты</h1>
 
-        <table class="contacts__table">
-          <tr>
-            <td>e-mail:</td>
-            <td>
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr>
-            <td>адрес:</td>
-            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+            <table class="contacts__table">
+              <tr>
+                <td>e-mail:</td>
+                <td class="contacts__table--maillink">
+                  <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                </td>
+              </tr>
+              <tr>
+                <td>адрес:</td>
+                <td class="contacts__table--adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              </tr>
+            </table>
 
-        <img class="contacts__map map" src="../img/map-mobile.png" alt="Местоположение на карте">
-
-        <a class="button contacts__button" href="#">Напиши нам</a>
-
+            <a class="button contacts__button" href="#">Напиши нам</a>
+          </div>
+          <div class="contacts__map--desktop">
+            <img class="contacts__map--img visually-hidden" src="#" alt="Местоположение на карте">
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map--img visually-hidden" src="#" alt="Местоположение на карте">
+        </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a href="#">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a href="#">Твиттер</a>
-          </li>
-        </ul>
-      </div>
+      <div class="main-footer__wrapper">
 
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="#">Разработано <span class="copyright__icon" href="#">HTML Academy</span></a>
+        <div class="main-footer__logo">
+          <a href="#" class="main-footer__logo--link">logo</a>
+        </div>
+
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#">Ин</a>
+            </li>
+            <li class="social__item">
+              <a href="#">Фей</a>
+            </li>
+            <li class="social__item">
+              <a href="#">Тв</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="#">Разработано <span class="copyright__icon" href="#">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
 

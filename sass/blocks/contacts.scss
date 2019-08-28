@@ -1,4 +1,18 @@
+.contacts {
+  width: 320px;
+  min-height: 900px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .contacts__title {
+  margin: 0;
+  padding: 55px 0 15px 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -7,6 +21,14 @@
 
 .contacts__table {
   line-height: 30px;
+  td {
+    padding: 12px 0;
+    vertical-align: top;
+  }
+  .contacts__table--maillink,
+  .contacts__table--adress {
+    padding-left: 30px;
+  }
   a {
     color: $text-color;
     text-decoration: none;
@@ -22,7 +44,21 @@
   }
 }
 
+.contacts__map {
+  margin-top: -540px;
+  min-height: 457px;
+
+  background-image: url('../../img/map-mobile.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .contacts__button {
+  display: block;
+
+  margin: 510px 0 0 0;
+  padding: 12px 0;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -42,5 +78,100 @@
     &:active {
       color: #7c7c7c;
     }
+  }
+}
+
+// Возможно таблицы придется менять на блоке, соответсвтенно и код.
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    min-height: 945px;
+  }
+
+  .contacts__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    margin: 0 0 30px 0;
+    padding: 55px 0 0 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__table {
+    width: 100%;
+    font-size: 17px;
+    line-height: 30px;
+    tbody {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    tr {
+      width: 300px;
+    }
+  }
+
+  .contacts__map {
+    margin-top: -570px;
+    background-image: url('../../img/map-tablet.png');
+  }
+
+  .contacts__button {
+    width: 226px;
+    margin: 570px auto 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1250px;
+    min-height: 660px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto 0 auto;
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    display: block;
+    margin-left: 175px;
+    width: 265px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__table {
+    margin-left: 175px;
+    width: 305px;
+    tbody {
+      display: table;
+    }
+  }
+
+  .contacts__map {
+    display: none;
+  }
+
+  .contacts__map--desktop {
+    width: 525px;
+    height: 457px;
+
+    background-image: url('../../img/map-desktop.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .contacts__button {
+    width: 226px;
+    margin: 90px 0 0 175px;
   }
 }
