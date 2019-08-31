@@ -1,7 +1,6 @@
 
 .main-header__wrapper {
-  /*width: 320px;*/
-  /*padding: 0 30px;*/ // Убрал отступы по бокам
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -14,8 +13,8 @@
 }
 
 .main-header__item {
+  position: relative;
   min-height: 78px;
-
   border-bottom: 1px solid #ececec;
 }
 
@@ -31,11 +30,10 @@
 /*ниже стилитолько для ссылок*/
 .main-header__link {
   display: block;
-
   margin: 0 auto;
-  padding: 26px 0 0 0;
+  padding: 26px;
 
-  width: 200px;
+  width: 175px;
 
   font-size: 17px;
   line-height: 24px;
@@ -51,6 +49,48 @@
   }
 }
 
+.main-header__link--search-svg,
+.main-header__link--basket-svg {
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+
+  left: 28px;
+  top: 27px;
+  opacity: 1;
+  path {
+    fill: #000000;
+  }
+}
+
+.main-header__link:hover ~ .main-header__link--search-svg,
+.main-header__link:focus ~ .main-header__link--search-svg,
+.main-header__link:hover ~ .main-header__link--basket-svg,
+.main-header__link:focus ~ .main-header__link--basket-svg   {
+  path {
+    fill: #63d1bb;
+  }
+}
+
+
+
+.main-header__link:active ~ .main-header__link--search-svg,
+.main-header__link:active ~ .main-header__link--basket-svg {
+  opacity: 0.3;
+}
+
+  .main-header__link--logo {
+    display: block;
+    /*width: 100px;*/
+    height: 44px;
+    padding: 16px;
+    margin: 0 auto;
+
+    background-image: url('../../img/mishka-logo-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
 @media (min-width: $tablet-width) {
   .main-header {
@@ -123,9 +163,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  /*.main-header {
     /*width: 1250px;*/
-  }
+
 
   .main-header__wrapper {
     width: 1050px;
@@ -150,9 +190,7 @@
     width: 225px;
   }
 
-  .main-header__item--basket {
-    /*margin-left: auto;*/
-  }
+
 
   .main-header__item--search {
     margin-left: auto;
