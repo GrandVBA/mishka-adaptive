@@ -1,7 +1,10 @@
 .reviews {
   min-height: 630px;
-  width: 320px;
   margin: 0 auto;
+
+  background-image: url('../../img/zigzag-line.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .reviews__wrapper {
@@ -71,7 +74,23 @@
   width: 50%;
   height: 100%;
 
-  border: none;
+  background: none;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+.slider__button--right {
+  border-left: none;
+
+  background-image: url('../../img/huge-arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button--left {
+  background-image: url('../../img/huge-arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews__button {
@@ -102,7 +121,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
+  .reviews { // НУЖНО ПЕРЕОПРЕДЕЛИТЬ ФОНЫ, СДЕЛАТЬ ИМЕННО МНОЖЕСТЕВННЫЕ ФОНЫ ДЛЯ ПОЛОСЫ И ФОНА НА ТАБЛЕТЕ И ДЕСКТОП
     width: 768px;
     min-height: 525px;
 
