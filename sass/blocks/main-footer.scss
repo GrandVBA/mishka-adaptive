@@ -152,20 +152,45 @@
 
   .main-footer__logo {
     display: block;
-    width: 105px;
-    min-height: 52px;
+  }
+
+  .main-footer__logo--link {
+    display: block;
+    width: 110px;
+    min-height: 45px;
+
+    background: url('../../img/logo-footer.svg') center no-repeat;
+    &:hover,
+    &:focus {
+      background: url('../../img/logo-footer-hover.svg') center no-repeat;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .social {
     margin-left: 150px;
     width: 156px;
     min-height: 52px;
+    border: none;
+  }
+
+  .social__list {
+    padding: 10px 0 0 0;
   }
 
   .copyright {
     margin-left: auto;
     width: 195px;
     min-height: 52px;
+  }
+
+  .copyright__link {
+    padding: 5px 0 0 0;
+    .copyright__icon {
+      top: -3px;
+    }
   }
 }
 

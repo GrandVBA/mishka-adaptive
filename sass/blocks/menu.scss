@@ -134,6 +134,7 @@
     /*width: 768px;*/
     background-image: url('../../img/hero-desktop.jpg');
     background-position: center 0;
+    background-repeat: no-repeat;
   }
 
   .menu__wrapper {
@@ -159,6 +160,10 @@
 
   .menu__item {
     width: 334px;
+  }
+
+  .menu__link {
+    padding: 28px 196px 28px 30px;
   }
 }
 
@@ -186,5 +191,8 @@
 
   .menu__item {
     width: 525px;
+  }
+  .menu__link {
+    padding: 28px 387px 28px 30px;
   }
 }

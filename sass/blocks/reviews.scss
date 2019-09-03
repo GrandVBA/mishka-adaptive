@@ -77,6 +77,13 @@
   background: none;
   border: 1px solid #ececec;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__button--right {
@@ -122,16 +129,19 @@
 
 @media (min-width: $tablet-width) {
   .reviews { // НУЖНО ПЕРЕОПРЕДЕЛИТЬ ФОНЫ, СДЕЛАТЬ ИМЕННО МНОЖЕСТЕВННЫЕ ФОНЫ ДЛЯ ПОЛОСЫ И ФОНА НА ТАБЛЕТЕ И ДЕСКТОП
-    width: 768px;
+    /*width: 768px;*/
     min-height: 525px;
 
-    background-image: url('../../img/review.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../../img/zigzag-line.svg');
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 
   .reviews__wrapper {
     width: 668px;
+    height: 457px;
     padding: 0 50px;
+    background: url('../../img/review.jpg') left no-repeat;
   }
 
   .reviews-title {
@@ -171,6 +181,10 @@
     height: 55px;
   }
 
+  .slider__button {
+    border: none;
+  }
+
   .reviews__button {
     margin: -325px 0 0 auto;
     padding: 13px 0;
@@ -179,22 +193,25 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .reviews {
-    width: 1250px;
     background-image: none;
   }
 
   .reviews__wrapper {
     width: 1058px;
-    min-height: 525px;
+    min-height: 550px;
     padding: 0 50px;
+    margin: -60px auto 0 auto;
 
-    background-image: url('../../img/review.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../../img/zigzag-line.svg'), url('../../img/review.jpg');
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom, left top;
   }
 
   .reviews-title {
     margin-left: 175px;
+    //padding: 120px 0 0 0;
   }
 
   .reviews__item {
