@@ -4,11 +4,58 @@
   margin: 0 auto;
 }
 
+.main-header__nav {
+  position: relative;
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+
+  display: block;
+  border: none;
+  width: 23px;
+  height: 23px;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+  background: #ffffff;
+}
+
+.main-header__nav--opened .main-header__toggle::before {
+  content: '';
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  right: 0;
+  top: 0;
+
+  z-index: 3;
+  background: url('../../img/menu-close.svg') center no-repeat;
+}
+
+.main-header__nav--closed .main-header__toggle::after {
+  content: '';
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  right: 0;
+  top: 0;
+
+  z-index: 4;
+  background: url('../../img/menu-burger.svg') center no-repeat;
+}
+
 .main-header__list {
   margin: 0;
   padding: 0;
 
-  min-height: 395px;
+  //min-height: 395px;
   list-style: none;
 }
 
@@ -25,6 +72,14 @@
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
+}
+
+.main-header__item--logo {
+  border: none;
+}
+
+.main-header__item--catalog {
+  border-top: 1px solid #ececec;
 }
 
 /*ниже стилитолько для ссылок*/
@@ -98,6 +153,23 @@
     }
   }
 
+@media (max-width: $mobile-width-only) {
+  .main-header__nav--closed .main-header__item {
+    display: none;
+    &--logo {
+      display: block;
+    }
+  }
+
+  .main-header__nav--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__nav--nojs .main-header__item {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
     /*width: 768px;*/
@@ -109,6 +181,10 @@
   .main-header__wrapper {
     width: 668px;
     padding: 0 50px;
+  }
+
+  .main-header__toggle {
+    display: none;
   }
 
   .main-header__list {
@@ -216,6 +292,10 @@
   .main-header__wrapper {
     width: 1050px;
     padding: 0 50px;
+  }
+
+  .main-header__toggle {
+    display: none;
   }
 
   .main-header__list {

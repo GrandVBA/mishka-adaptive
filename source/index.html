@@ -11,12 +11,11 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-header__nav">
+        <nav class="main-header__nav main-header__nav--closed main-header__nav--nojs">
+          <button class="main-header__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-header__list">
             <li class="main-header__item main-header__item--logo">
-              <a class="main-header__link main-header__link--logo" href="#">
-
-              </a>
+              <a class="main-header__link main-header__link--logo" href="#"></a>
             </li>
             <li class="main-header__item main-header__item--catalog">
               <a class="main-header__link main-header__link--catalog" href="#">Каталог товаров</a>
@@ -333,5 +332,29 @@ Jw8TAAAAFHRFWHRwZGY6VmVyc2lvbgBQREYtMS41DUCDV0wAAAAASUVORK5CYII=" />
       </div>
     </footer>
 
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h1 class="modal__title">Добавить<br>в корзину</h1>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden" id="checkbox-s" type="radio" name="size" value="S" checked>
+            <label for="checkbox-s">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden" id="checkbox-m" type="radio" name="size" value="M">
+            <label for="checkbox-m">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden" id="checkbox-l" type="radio" name="size" value="L">
+            <label for="checkbox-l">L</label>
+          </li>
+        </ul>
+        <button class="modal__button" type="button" name="add">Добавить</button>
+      </div>
+      <button class="modal-close" type="button" name="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+    <div class="modal-overlay"></div>
+    <script src="../js/script.js"></script>
   </body>
 </html>
