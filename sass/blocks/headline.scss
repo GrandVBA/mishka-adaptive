@@ -1,0 +1,41 @@
+.headline {
+  min-height: 177px;
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+
+.headline__title {
+  margin: 0;
+  padding: 73px 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .headline {
+    min-height: 226px;
+  }
+
+  .headline__title {
+    padding: 88px 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .headline {
+    min-height: 252px;
+  }
+
+  .headline__title {
+    padding: 97px 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

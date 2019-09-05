@@ -1,3 +1,8 @@
+@keyframes popup-show {
+  0% {top: -2500px;}
+  100% {top: 25%;}
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -13,8 +18,12 @@
 
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
   z-index: 4;
+
+  animation: popup-show  0.4s;
 }
+
 
 .modal-close {
   position: absolute;
