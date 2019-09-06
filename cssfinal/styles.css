@@ -1307,7 +1307,7 @@ img {
 
 @media (min-width: 1150px) {
   .headline {
-    min-height: 252px; }
+    min-height: 255px; }
   .headline__title {
     padding: 97px 0;
     font-size: 53px;
@@ -1432,7 +1432,7 @@ img {
 .catalog-products__img-video {
   position: relative;
   height: 150px;
-  background: url("../../img/video-mobile.png") center no-repeat; }
+  background: url("../../img/video-mobile.jpg") center no-repeat; }
   .catalog-products__img-video::before {
     position: absolute;
     content: '';
@@ -1462,6 +1462,8 @@ img {
   display: block;
   margin: 25px 0;
   padding: 0 0 0 90px;
+  font-size: 17px;
+  line-height: 24px;
   width: 135px;
   min-height: 50px;
   -webkit-box-ordinal-group: 0;
@@ -1502,3 +1504,90 @@ img {
     background-color: #444444; }
   .catalog-products__button-video:active {
     color: #7c7c7c; }
+
+@media (min-width: 768px) {
+  .catalog-products {
+    min-height: 2048px; }
+  .catalog-products__wrapper {
+    width: 668px;
+    padding: 0 50px; }
+  .catalog-products__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 334px;
+    margin: 53px 0 0 0; }
+  .catalog-products__img {
+    height: 334px;
+    width: 334px; }
+  .catalog-products__img--zaika {
+    background: url("../../img/zaika-tablet.jpg") center no-repeat; }
+  .catalog-products__img--korzinka {
+    background: url("../../img/korzinka-tablet.jpg") center no-repeat; }
+  .catalog-products__img--big-korzinka {
+    background: url("../../img/big-korzinka-tablet.jpg") center no-repeat; }
+  .catalog-products__description {
+    padding: 0 32px;
+    height: 332px;
+    width: 268px;
+    border: 1px solid #ededed; }
+  .catalog-products__title {
+    margin: 20px 0 5px 0; }
+    .catalog-products__title a {
+      font-size: 20px; }
+  .catalog-products__price {
+    margin: 168px 0 21px 0;
+    padding: 25px 0 0 0;
+    font-size: 17px; }
+  .catalog-products__price--big-korzinka {
+    margin: 145px 0 21px 0;
+    padding: 25px 0 0 0;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    border-top: 1px solid #ededed; }
+  .catalog-products__item-video {
+    margin: 53px 0 0 0; }
+  .catalog-products__title-video {
+    margin: 22px 0 0 0;
+    padding: 12px 0 12px 110px;
+    font-size: 20px;
+    line-height: 24px;
+    width: auto;
+    min-height: auto;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0; }
+    .catalog-products__title-video::before {
+      left: 35px; }
+  .catalog-products__text-video {
+    margin: 23px 0 35px 0;
+    font-size: 15px;
+    line-height: 30px; }
+  .catalog-products__img-video {
+    height: 455px;
+    width: auto;
+    background: url("../../img/video-tablet.jpg") center no-repeat; }
+    .catalog-products__img-video::before {
+      top: 185px;
+      left: 280px; }
+  .catalog-products__button-video {
+    display: block;
+    margin: 0 0 45px 0;
+    padding: 16px 0;
+    width: 100%;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444444;
+    border: 2px solid #444444; }
+    .catalog-products__button-video:hover, .catalog-products__button-video:focus {
+      color: #ffffff;
+      background-color: #444444; }
+    .catalog-products__button-video:active {
+      color: #7c7c7c; } }
