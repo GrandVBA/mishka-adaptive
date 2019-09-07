@@ -540,7 +540,7 @@ img {
     display: block;
     position: relative;
     margin: -15px auto 0 auto;
-    width: 768px;
+    width: 100%;
     z-index: 2; } }
 
 @media (min-width: 1150px) {
@@ -572,9 +572,7 @@ img {
     margin-top: 160px;
     margin-left: 175px; }
   .product-week__flexelement--submit {
-    margin-left: 175px; }
-  .product-week__zigzag--top {
-    width: auto; } }
+    margin-left: 175px; } }
 
 .about-us {
   min-height: 833px;
@@ -1574,20 +1572,72 @@ img {
       top: 185px;
       left: 280px; }
   .catalog-products__button-video {
+    margin: 0 0 45px 0; }
+  .catalog-products__zigzag--top {
     display: block;
-    margin: 0 0 45px 0;
-    padding: 16px 0;
+    position: relative;
+    margin: -15px auto 0 auto;
     width: 100%;
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #444444;
-    border: 2px solid #444444; }
-    .catalog-products__button-video:hover, .catalog-products__button-video:focus {
-      color: #ffffff;
-      background-color: #444444; }
-    .catalog-products__button-video:active {
-      color: #7c7c7c; } }
+    z-index: 2; } }
+
+@media (min-width: 1150px) {
+  .catalog-products {
+    min-height: 1407px; }
+  .catalog-products__wrapper {
+    width: 1050px;
+    padding: 0 50px; }
+  .catalog-products__list {
+    margin: 50px 0 0 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .catalog-products__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .catalog-products__img {
+    height: 462px;
+    width: 316px; }
+  .catalog-products__img--zaika {
+    background: url("../../img/zaika-desktop.jpg") center no-repeat; }
+  .catalog-products__img--korzinka {
+    background: url("../../img/korzinka-desktop.jpg") center no-repeat; }
+  .catalog-products__img--big-korzinka {
+    background: url("../../img/big-korzinka-desktop.jpg") center no-repeat; }
+  .catalog-products__description {
+    height: 195px;
+    width: 250px; }
+  .catalog-products__price {
+    margin: 35px 0 21px 0; }
+  .catalog-products__price--big-korzinka {
+    margin: 12px 0 21px 0; }
+  .catalog-products__item-video {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .catalog-products__img-video {
+    width: 682px;
+    height: 455px;
+    background: url("../../img/video-desktop.jpg") center no-repeat; }
+    .catalog-products__img-video::before {
+      top: 185px;
+      left: 280px; }
+  .catalog-products__title-video {
+    margin: 90px 0 0 0;
+    padding: 0 0 0px 80px;
+    width: 160px; }
+    .catalog-products__title-video::before {
+      left: 74px;
+      top: -50px; }
+  .catalog-products__description-video {
+    padding: 0 50px;
+    margin: -280px 0 0 auto;
+    width: 233px;
+    min-height: 217px;
+    z-index: 2; } }
