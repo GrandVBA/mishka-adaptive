@@ -561,7 +561,9 @@ img {
     font-size: 53px;
     line-height: 57px; }
     .product-week__title span {
-      margin-left: -630px; }
+      position: absolute;
+      margin-left: -630px;
+      margin-top: 10px; }
   .product-week__options {
     margin: 50px 0 0 0; }
   .product-week__image {
