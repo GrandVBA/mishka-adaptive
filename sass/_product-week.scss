@@ -1,0 +1,223 @@
+.product-week {
+  min-height: 820px;
+  margin: 0 auto;
+
+  background-image: url('../../img/zigzag-line.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.product-week__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.product-week__title {
+  margin: 25px 0 0 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $title-color;
+  span {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #63d1bb;
+  }
+}
+
+.product-week__description {
+  margin: 25px 0 0 0;
+}
+
+.product-week__options {
+  margin: 25px 0 0 0;
+  line-height: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  tr {
+    border-bottom: 1px solid #ececec;
+  }
+  td {
+    padding: 10px 0;
+  }
+}
+
+.product-week__image {
+  margin: 28px 0 0 0;
+  height: 315px;
+
+  background-image: url('../../img/triple-set-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.product-week__price {
+  margin: 0;
+  padding: 25px 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $title-color;
+
+  text-align: center;
+}
+
+.product-week__button {
+  width: 100%;
+  height: 48px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $title-color;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+    border-color: #444444;
+  }
+  &:active {
+    color: #7c7c7c;
+  }
+}
+
+.product-week__zigzag--top {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week {
+    min-height: 640px;
+  }
+
+  .product-week__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  .product-week__title {
+    margin: 30px 0 0 0;
+    font-size: 43px;
+    line-height: 50px;
+    span {
+      display: inline-block;
+      line-height: 17px;
+      text-align: center;
+      margin-left: 145px;
+      width: 80px;
+      height: 35px;
+    }
+  }
+
+  .product-week__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-week__flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 57px;
+    height: 404px;
+    width: 100%;
+  }
+
+  .product-week__image {
+    margin: 0;
+    height: 404px;
+    width: 334px;
+
+    background-image: url('../../img/triple-set-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .product-week__flexelement--info {
+    width: 291px;
+    height: 238px;
+  }
+
+  .product-week__description {
+    margin: 0;
+  }
+
+  .product-week__flexelement--submit {
+    margin-top: -122px;
+    width: 291px;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+  }
+
+  .product-week__zigzag--top {
+    display: block;
+    position: relative;
+    margin: -15px auto 0 auto;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-week {
+    /*width: 1250px;*/
+    min-height: 800px;
+
+    background-image: none;
+  }
+
+  .product-week__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    min-height: 715px;
+
+    background-image: url('../../img/zigzag-line.svg');
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+
+  .product-week__title {
+    position: absolute;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    span {
+      position: absolute;
+      margin-left: -630px;
+      margin-top: 10px;
+    }
+  }
+
+  .product-week__options {
+    margin: 50px 0 0 0;
+  }
+
+  .product-week__image {
+    width: 525px;
+    height: 636px;
+
+    background-image: url('../../img/triple-set-desktop.jpg');
+  }
+
+  .product-week__flexelement--info {
+    margin-top: 160px;
+    margin-left: 175px;
+  }
+
+  .product-week__flexelement--submit {
+    margin-left: 175px;
+  }
+}
