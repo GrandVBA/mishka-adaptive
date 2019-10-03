@@ -98,6 +98,7 @@ img {
 
 /*ниже стилитолько для ссылок*/
 .main-header__link {
+  position: relative;
   display: block;
   margin: 0 auto;
   padding: 26px;
@@ -117,41 +118,67 @@ img {
   opacity: 0.3;
 }
 
-.main-header__link--search-svg,
+.main-header__link--basket::before {
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 28px;
+  left: -20px;
+  top: 23px;
+  opacity: 0.2;
+  background: url(../img/cart.svg) no-repeat center;
+}
+
+.main-header__link--basket:hover::before {
+  opacity: 1;
+  background: url(../img/cart11.svg) no-repeat center;
+}
+
+.main-header__link--search::before {
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 28px;
+  left: -20px;
+  top: 23px;
+  opacity: 0.2;
+  background: url(../img/search.svg) no-repeat center;
+}
+
+.main-header__link--search:hover::before {
+  opacity: 1;
+  background: url(../img/search11.svg) no-repeat center;
+}
+
+/*.main-header__link--search-svg,
 .main-header__link--basket-svg {
   display: block;
   position: absolute;
   width: 23px;
   height: 23px;
+
   left: 28px;
   top: 27px;
   opacity: 0.2;
-}
-
-.main-header__link--search-svg path,
-.main-header__link--basket-svg path {
-  fill: #000000;
+  path {
+    fill: #000000;
+  }
 }
 
 .main-header__link:hover > .main-header__link--search-svg,
 .main-header__link:focus > .main-header__link--search-svg,
 .main-header__link:hover > .main-header__link--basket-svg,
-.main-header__link:focus > .main-header__link--basket-svg {
+.main-header__link:focus > .main-header__link--basket-svg   {
   opacity: 1;
-}
-
-.main-header__link:hover > .main-header__link--search-svg path,
-.main-header__link:focus > .main-header__link--search-svg path,
-.main-header__link:hover > .main-header__link--basket-svg path,
-.main-header__link:focus > .main-header__link--basket-svg path {
-  fill: #63d1bb;
+  path {
+    fill: #63d1bb;
+  }
 }
 
 .main-header__link:active ~ .main-header__link--search-svg,
 .main-header__link:active ~ .main-header__link--basket-svg {
   opacity: 0.3;
-}
-
+}*/
 .main-header__link--logo {
   display: block;
   /*width: 100px;*/
@@ -288,6 +315,14 @@ img {
     font-size: 15px;
     margin: 20px 0 0 0;
     width: 145px;
+  }
+  .main-header__link--basket::before {
+    left: 0;
+    top: -1px;
+  }
+  .main-header__link--search::before {
+    left: 3px;
+    top: 4px;
   }
 }
 
