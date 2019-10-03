@@ -28,3 +28,13 @@ img {
   width: 1px;
   height: 1px;
 }
+
+.progress {
+  width: 0%;
+  height: 4px;
+  background-color: #63d1bb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
