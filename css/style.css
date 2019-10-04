@@ -30,7 +30,7 @@ img {
 
 .progress {
   width: 0%;
-  height: 4px;
+  height: 5px;
   background-color: #63d1bb;
   position: fixed;
   top: 0;
