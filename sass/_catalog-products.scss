@@ -39,13 +39,13 @@
 }
 
 .catalog-products__img--zaika {
-  background: url('../../img/zaika-mobile.jpg') center no-repeat;
+  background: url('../img/zaika-mobile.jpg') center no-repeat;
 }
 .catalog-products__img--korzinka {
-  background: url('../../img/korzinka-mobile.jpg') center no-repeat;
+  background: url('../img/korzinka-mobile.jpg') center no-repeat;
 }
 .catalog-products__img--big-korzinka {
-  background: url('../../img/big-korzinka-mobile.jpg') center no-repeat;
+  background: url('../img/big-korzinka-mobile.jpg') center no-repeat;
 }
 
 .catalog-products__description {
@@ -98,12 +98,12 @@
   width: 30px;
   height: 30px;
 
-  background: url('../../img/cart.svg') center no-repeat;
+  background: url('../img/cart.svg') center no-repeat;
   opacity: 0.2;
   &:hover,
   &:focus {
     opacity: 1;
-    background: url('../../img/cart11.svg') center no-repeat;
+    background: url('../img/cart11.svg') center no-repeat;
   }
   &:active {
     opacity: 0.2;
@@ -129,7 +129,7 @@
 .catalog-products__img-video {
   position: relative;
   height: 150px;
-  background: url('../../img/video-mobile.jpg') center no-repeat;
+  background: url('../img/video-mobile.jpg') center no-repeat;
   &::before {
     position: absolute;
     content: '';
@@ -140,7 +140,7 @@
     top: 33px;
     left: 80px;
 
-    background: url('../../img/play.svg') center no-repeat;
+    background: url('../img/play.svg') center no-repeat;
     transform: scale(1);
     transition-duration: 0.2s;
   }
@@ -179,7 +179,7 @@
     top: 5px;
     left: 23px;
 
-    background: url('../../img/video.svg') center no-repeat;
+    background: url('../img/video.svg') center no-repeat;
   }
 }
 
@@ -242,13 +242,13 @@
   }
 
   .catalog-products__img--zaika {
-    background: url('../../img/zaika-tablet.jpg') center no-repeat;
+    background: url('../img/zaika-tablet.jpg') center no-repeat;
   }
   .catalog-products__img--korzinka {
-    background: url('../../img/korzinka-tablet.jpg') center no-repeat;
+    background: url('../img/korzinka-tablet.jpg') center no-repeat;
   }
   .catalog-products__img--big-korzinka {
-    background: url('../../img/big-korzinka-tablet.jpg') center no-repeat;
+    background: url('../img/big-korzinka-tablet.jpg') center no-repeat;
   }
 
   .catalog-products__description {
@@ -311,7 +311,7 @@
   .catalog-products__img-video {
     height: 455px;
     width: auto;
-    background: url('../../img/video-tablet.jpg') center no-repeat;
+    background: url('../img/video-tablet.jpg') center no-repeat;
     &::before {
       top: 185px;
       left: 280px;
@@ -357,13 +357,13 @@
   }
 
   .catalog-products__img--zaika {
-    background: url('../../img/zaika-desktop.jpg') center no-repeat;
+    background: url('../img/zaika-desktop.jpg') center no-repeat;
   }
   .catalog-products__img--korzinka {
-    background: url('../../img/korzinka-desktop.jpg') center no-repeat;
+    background: url('../img/korzinka-desktop.jpg') center no-repeat;
   }
   .catalog-products__img--big-korzinka {
-    background: url('../../img/big-korzinka-desktop.jpg') center no-repeat;
+    background: url('../img/big-korzinka-desktop.jpg') center no-repeat;
   }
 
   .catalog-products__description {
@@ -386,7 +386,7 @@
   .catalog-products__img-video {
     width: 682px;
     height: 455px;
-    background: url('../../img/video-desktop.jpg') center no-repeat;
+    background: url('../img/video-desktop.jpg') center no-repeat;
     &::before {
       top: 185px;
       left: 280px;

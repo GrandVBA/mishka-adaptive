@@ -54,12 +54,12 @@
 }
 
 .social__link--inst {
-  background-image: url('../../img/insta.svg');
+  background-image: url('../img/insta.svg');
   background-repeat: no-repeat;
   background-position: center;
   &:hover,
   &:focus {
-    background-image: url('../../img/instahover.png');
+    background-image: url('../img/instahover.png');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -69,12 +69,12 @@
 }
 
 .social__link--fb {
-  background-image: url('../../img/fb.svg');
+  background-image: url('../img/fb.svg');
   background-repeat: no-repeat;
   background-position: center;
   &:hover,
   &:focus {
-    background-image: url('../../img/fbhover.png');
+    background-image: url('../img/fbhover.png');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -84,12 +84,12 @@
 }
 
 .social__link--tw {
-  background-image: url('../../img/tw.svg');
+  background-image: url('../img/tw.svg');
   background-repeat: no-repeat;
   background-position: center;
   &:hover,
   &:focus {
-    background-image: url('../../img/twhover.png');
+    background-image: url('../img/twhover.png');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -123,13 +123,13 @@
     font-size: 1px;
     color: rgba(0, 0, 0, 0);
 
-    background-image: url('../../img/htmlacademy.png');
+    background-image: url('../img/htmlacademy.png');
     background-repeat: no-repeat;
     background-position: center;
   }
   &:hover .copyright__icon,
   &:focus .copyright__icon {
-    background-image: url('../../img/htmlacademy-hover.png');
+    background-image: url('../img/htmlacademy-hover.png');
   }
   &:active .copyright__icon,
   &:active {
@@ -159,10 +159,10 @@
     width: 110px;
     min-height: 45px;
 
-    background: url('../../img/logo-footer.svg') center no-repeat;
+    background: url('../img/logo-footer.svg') center no-repeat;
     &:hover,
     &:focus {
-      background: url('../../img/logo-footer-hover.svg') center no-repeat;
+      background: url('../img/logo-footer-hover.svg') center no-repeat;
     }
     &:active {
       opacity: 0.3;

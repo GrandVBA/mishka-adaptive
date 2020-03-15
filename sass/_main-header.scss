@@ -34,7 +34,7 @@
   top: 0;
 
   z-index: 3;
-  background: url('../../img/menu-close.svg') center no-repeat;
+  background: url('../img/menu-close.svg') center no-repeat;
 }
 
 .main-header__nav--closed .main-header__toggle::after {
@@ -48,7 +48,7 @@
   top: 0;
 
   z-index: 4;
-  background: url('../../img/menu-burger.svg') center no-repeat;
+  background: url('../img/menu-burger.svg') center no-repeat;
 }
 
 .main-header__list {
@@ -115,12 +115,12 @@
   top: 23px;
   opacity: 0.2;
 
-  background: url(../img/cart.svg) no-repeat center;
+  background: url('../img/cart.svg') no-repeat center;
 }
 
 .main-header__link--basket:hover::before {
   opacity: 1;
-  background: url(../img/cart11.svg) no-repeat center;
+  background: url('../img/cart11.svg') no-repeat center;
 }
 
 .main-header__link--search::before {
@@ -133,12 +133,12 @@
   top: 23px;
   opacity: 0.2;
 
-  background: url(../img/search.svg) no-repeat center;
+  background: url('../img/search.svg') no-repeat center;
 }
 
 .main-header__link--search:hover::before {
   opacity: 1;
-  background: url(../img/search11.svg) no-repeat center;
+  background: url('../img/search11.svg') no-repeat center;
 }
 
 /*.main-header__link--search-svg,
@@ -178,7 +178,7 @@
     padding: 16px;
     margin: 0 auto;
 
-    background-image: url('../../img/mishka-logo-mobile.svg');
+    background-image: url('../img/mishka-logo-mobile.svg');
     background-repeat: no-repeat;
     background-position: center center;
     &:hover,
@@ -289,7 +289,7 @@
     height: 50px;
     margin: 15px auto 0 0;
 
-    background-image: url('../../img/mishka-logo-tablet.svg');
+    background-image: url('../img/mishka-logo-tablet.svg');
   }
 
   .main-header__link--search {

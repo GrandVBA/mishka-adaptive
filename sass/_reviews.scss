@@ -2,7 +2,7 @@
   min-height: 630px;
   margin: 0 auto;
 
-  background-image: url('../../img/zigzag-line.svg');
+  background-image: url('../img/zigzag-line.svg');
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -89,13 +89,13 @@
 .slider__button--right {
   border-left: none;
 
-  background-image: url('../../img/huge-arrow-right.svg');
+  background-image: url('../img/huge-arrow-right.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider__button--left {
-  background-image: url('../../img/huge-arrow-left.svg');
+  background-image: url('../img/huge-arrow-left.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -132,7 +132,7 @@
     /*width: 768px;*/
     min-height: 525px;
 
-    background-image: url('../../img/zigzag-line.svg');
+    background-image: url('../img/zigzag-line.svg');
     background-repeat: repeat-x;
     background-position: bottom;
   }
@@ -141,7 +141,7 @@
     width: 668px;
     height: 457px;
     padding: 0 50px;
-    background: url('../../img/review.jpg') left no-repeat;
+    background: url('../img/review.jpg') left no-repeat;
   }
 
   .reviews-title {
@@ -204,7 +204,7 @@
     padding: 0 50px;
     margin: -60px auto 0 auto;
 
-    background-image: url('../../img/zigzag-line.svg'), url('../../img/review.jpg');
+    background-image: url('../img/zigzag-line.svg'), url('../img/review.jpg');
     background-repeat: repeat-x, no-repeat;
     background-position: bottom, left top;
   }

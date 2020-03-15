@@ -2,7 +2,7 @@
   min-height: 489px;
   margin: 0 auto;
   background-color: #f9f9f9;
-  background-image: url('../../img/hero-mobile.jpg');
+  background-image: url('../img/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center -15px;
 }
@@ -83,7 +83,7 @@
     top: 20px;
     right: 30px;
 
-    background-image: url('../../img/interior.svg');
+    background-image: url('../img/interior.svg');
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -118,7 +118,7 @@
     top: 20px;
     right: 20px;
 
-    background-image: url('../../img/toy.svg');
+    background-image: url('../img/toy.svg');
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -130,7 +130,7 @@
   .menu {
     height: 733px; //либо больше, из-за волны (декор жэлемента)
     /*width: 768px;*/
-    background-image: url('../../img/hero-desktop.jpg');
+    background-image: url('../img/hero-desktop.jpg');
     background-position: center 0;
     background-repeat: no-repeat;
   }

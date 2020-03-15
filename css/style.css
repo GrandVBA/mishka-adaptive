@@ -69,7 +69,7 @@ img {
   right: 0;
   top: 0;
   z-index: 3;
-  background: url("../../img/menu-close.svg") center no-repeat;
+  background: url("../img/menu-close.svg") center no-repeat;
 }
 
 .main-header__nav--closed .main-header__toggle::after {
@@ -80,7 +80,7 @@ img {
   right: 0;
   top: 0;
   z-index: 4;
-  background: url("../../img/menu-burger.svg") center no-repeat;
+  background: url("../img/menu-burger.svg") center no-repeat;
 }
 
 .main-header__list {
@@ -142,12 +142,12 @@ img {
   left: -20px;
   top: 23px;
   opacity: 0.2;
-  background: url(../img/cart.svg) no-repeat center;
+  background: url("../img/cart.svg") no-repeat center;
 }
 
 .main-header__link--basket:hover::before {
   opacity: 1;
-  background: url(../img/cart11.svg) no-repeat center;
+  background: url("../img/cart11.svg") no-repeat center;
 }
 
 .main-header__link--search::before {
@@ -158,12 +158,12 @@ img {
   left: -20px;
   top: 23px;
   opacity: 0.2;
-  background: url(../img/search.svg) no-repeat center;
+  background: url("../img/search.svg") no-repeat center;
 }
 
 .main-header__link--search:hover::before {
   opacity: 1;
-  background: url(../img/search11.svg) no-repeat center;
+  background: url("../img/search11.svg") no-repeat center;
 }
 
 /*.main-header__link--search-svg,
@@ -201,7 +201,7 @@ img {
   height: 44px;
   padding: 16px;
   margin: 0 auto;
-  background-image: url("../../img/mishka-logo-mobile.svg");
+  background-image: url("../img/mishka-logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -303,7 +303,7 @@ img {
     width: 115px;
     height: 50px;
     margin: 15px auto 0 0;
-    background-image: url("../../img/mishka-logo-tablet.svg");
+    background-image: url("../img/mishka-logo-tablet.svg");
   }
   .main-header__link--search {
     height: 32px;
@@ -395,7 +395,7 @@ img {
   min-height: 489px;
   margin: 0 auto;
   background-color: #f9f9f9;
-  background-image: url("../../img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -15px;
 }
@@ -469,7 +469,7 @@ img {
   height: 65px;
   top: 20px;
   right: 30px;
-  background-image: url("../../img/interior.svg");
+  background-image: url("../img/interior.svg");
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.5;
@@ -503,7 +503,7 @@ img {
   height: 58px;
   top: 20px;
   right: 20px;
-  background-image: url("../../img/toy.svg");
+  background-image: url("../img/toy.svg");
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.5;
@@ -513,7 +513,7 @@ img {
   .menu {
     height: 733px;
     /*width: 768px;*/
-    background-image: url("../../img/hero-desktop.jpg");
+    background-image: url("../img/hero-desktop.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
   }
@@ -572,7 +572,7 @@ img {
 .product-week {
   min-height: 820px;
   margin: 0 auto;
-  background-image: url("../../img/zigzag-line.svg");
+  background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -621,7 +621,7 @@ img {
 .product-week__image {
   margin: 28px 0 0 0;
   height: 315px;
-  background-image: url("../../img/triple-set-mobile.jpg");
+  background-image: url("../img/triple-set-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -705,7 +705,7 @@ img {
     margin: 0;
     height: 404px;
     width: 334px;
-    background-image: url("../../img/triple-set-tablet.jpg");
+    background-image: url("../img/triple-set-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -741,7 +741,7 @@ img {
     width: 1050px;
     padding: 0 50px;
     min-height: 715px;
-    background-image: url("../../img/zigzag-line.svg");
+    background-image: url("../img/zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: bottom;
   }
@@ -762,7 +762,7 @@ img {
   .product-week__image {
     width: 525px;
     height: 636px;
-    background-image: url("../../img/triple-set-desktop.jpg");
+    background-image: url("../img/triple-set-desktop.jpg");
   }
   .product-week__flexelement--info {
     margin-top: 160px;
@@ -884,7 +884,7 @@ img {
 .reviews {
   min-height: 630px;
   margin: 0 auto;
-  background-image: url("../../img/zigzag-line.svg");
+  background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -979,13 +979,13 @@ img {
 
 .slider__button--right {
   border-left: none;
-  background-image: url("../../img/huge-arrow-right.svg");
+  background-image: url("../img/huge-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider__button--left {
-  background-image: url("../../img/huge-arrow-left.svg");
+  background-image: url("../img/huge-arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1019,7 +1019,7 @@ img {
   .reviews {
     /*width: 768px;*/
     min-height: 525px;
-    background-image: url("../../img/zigzag-line.svg");
+    background-image: url("../img/zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: bottom;
   }
@@ -1027,7 +1027,7 @@ img {
     width: 668px;
     height: 457px;
     padding: 0 50px;
-    background: url("../../img/review.jpg") left no-repeat;
+    background: url("../img/review.jpg") left no-repeat;
   }
   .reviews-title {
     display: block;
@@ -1078,7 +1078,7 @@ img {
     min-height: 550px;
     padding: 0 50px;
     margin: -60px auto 0 auto;
-    background-image: url("../../img/zigzag-line.svg"), url("../../img/review.jpg");
+    background-image: url("../img/zigzag-line.svg"), url("../img/review.jpg");
     background-repeat: repeat-x, no-repeat;
     background-position: bottom, left top;
   }
@@ -1162,7 +1162,7 @@ img {
 .contacts__map {
   margin-top: -540px;
   min-height: 457px;
-  background-image: url("../../img/map-mobile.png");
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1239,7 +1239,7 @@ img {
   }
   .contacts__map {
     margin-top: -550px;
-    background-image: url("../../img/map-tablet.png");
+    background-image: url("../img/map-tablet.png");
   }
   .contacts__button {
     width: 226px;
@@ -1293,7 +1293,7 @@ img {
   .contacts__map--desktop {
     width: 525px;
     height: 457px;
-    background-image: url("../../img/map-desktop.png");
+    background-image: url("../img/map-desktop.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -1367,13 +1367,13 @@ img {
 }
 
 .social__link--inst {
-  background-image: url("../../img/insta.svg");
+  background-image: url("../img/insta.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social__link--inst:hover, .social__link--inst:focus {
-  background-image: url("../../img/instahover.png");
+  background-image: url("../img/instahover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1383,13 +1383,13 @@ img {
 }
 
 .social__link--fb {
-  background-image: url("../../img/fb.svg");
+  background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social__link--fb:hover, .social__link--fb:focus {
-  background-image: url("../../img/fbhover.png");
+  background-image: url("../img/fbhover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1399,13 +1399,13 @@ img {
 }
 
 .social__link--tw {
-  background-image: url("../../img/tw.svg");
+  background-image: url("../img/tw.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social__link--tw:hover, .social__link--tw:focus {
-  background-image: url("../../img/twhover.png");
+  background-image: url("../img/twhover.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1437,14 +1437,14 @@ img {
   top: 12px;
   font-size: 1px;
   color: rgba(0, 0, 0, 0);
-  background-image: url("../../img/htmlacademy.png");
+  background-image: url("../img/htmlacademy.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .copyright__link:hover .copyright__icon,
 .copyright__link:focus .copyright__icon {
-  background-image: url("../../img/htmlacademy-hover.png");
+  background-image: url("../img/htmlacademy-hover.png");
 }
 
 .copyright__link:active .copyright__icon, .copyright__link:active {
@@ -1474,10 +1474,10 @@ img {
     display: block;
     width: 110px;
     min-height: 45px;
-    background: url("../../img/logo-footer.svg") center no-repeat;
+    background: url("../img/logo-footer.svg") center no-repeat;
   }
   .main-footer__logo--link:hover, .main-footer__logo--link:focus {
-    background: url("../../img/logo-footer-hover.svg") center no-repeat;
+    background: url("../img/logo-footer-hover.svg") center no-repeat;
   }
   .main-footer__logo--link:active {
     opacity: 0.3;
@@ -1746,15 +1746,15 @@ img {
 }
 
 .catalog-products__img--zaika {
-  background: url("../../img/zaika-mobile.jpg") center no-repeat;
+  background: url("../img/zaika-mobile.jpg") center no-repeat;
 }
 
 .catalog-products__img--korzinka {
-  background: url("../../img/korzinka-mobile.jpg") center no-repeat;
+  background: url("../img/korzinka-mobile.jpg") center no-repeat;
 }
 
 .catalog-products__img--big-korzinka {
-  background: url("../../img/big-korzinka-mobile.jpg") center no-repeat;
+  background: url("../img/big-korzinka-mobile.jpg") center no-repeat;
 }
 
 .catalog-products__description {
@@ -1804,13 +1804,13 @@ img {
   padding: 5px;
   width: 30px;
   height: 30px;
-  background: url("../../img/cart.svg") center no-repeat;
+  background: url("../img/cart.svg") center no-repeat;
   opacity: 0.2;
 }
 
 .catalog-products__inbasket:hover, .catalog-products__inbasket:focus {
   opacity: 1;
-  background: url("../../img/cart11.svg") center no-repeat;
+  background: url("../img/cart11.svg") center no-repeat;
 }
 
 .catalog-products__inbasket:active {
@@ -1843,7 +1843,7 @@ img {
 .catalog-products__img-video {
   position: relative;
   height: 150px;
-  background: url("../../img/video-mobile.jpg") center no-repeat;
+  background: url("../img/video-mobile.jpg") center no-repeat;
 }
 
 .catalog-products__img-video::before {
@@ -1853,7 +1853,7 @@ img {
   height: 85px;
   top: 33px;
   left: 80px;
-  background: url("../../img/play.svg") center no-repeat;
+  background: url("../img/play.svg") center no-repeat;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: 0.2s;
@@ -1896,7 +1896,7 @@ img {
   height: 35px;
   top: 5px;
   left: 23px;
-  background: url("../../img/video.svg") center no-repeat;
+  background: url("../img/video.svg") center no-repeat;
 }
 
 .catalog-products__description-video {
@@ -1955,13 +1955,13 @@ img {
     width: 334px;
   }
   .catalog-products__img--zaika {
-    background: url("../../img/zaika-tablet.jpg") center no-repeat;
+    background: url("../img/zaika-tablet.jpg") center no-repeat;
   }
   .catalog-products__img--korzinka {
-    background: url("../../img/korzinka-tablet.jpg") center no-repeat;
+    background: url("../img/korzinka-tablet.jpg") center no-repeat;
   }
   .catalog-products__img--big-korzinka {
-    background: url("../../img/big-korzinka-tablet.jpg") center no-repeat;
+    background: url("../img/big-korzinka-tablet.jpg") center no-repeat;
   }
   .catalog-products__description {
     padding: 0 32px;
@@ -2013,7 +2013,7 @@ img {
   .catalog-products__img-video {
     height: 455px;
     width: auto;
-    background: url("../../img/video-tablet.jpg") center no-repeat;
+    background: url("../img/video-tablet.jpg") center no-repeat;
   }
   .catalog-products__img-video::before {
     top: 185px;
@@ -2060,13 +2060,13 @@ img {
     width: 316px;
   }
   .catalog-products__img--zaika {
-    background: url("../../img/zaika-desktop.jpg") center no-repeat;
+    background: url("../img/zaika-desktop.jpg") center no-repeat;
   }
   .catalog-products__img--korzinka {
-    background: url("../../img/korzinka-desktop.jpg") center no-repeat;
+    background: url("../img/korzinka-desktop.jpg") center no-repeat;
   }
   .catalog-products__img--big-korzinka {
-    background: url("../../img/big-korzinka-desktop.jpg") center no-repeat;
+    background: url("../img/big-korzinka-desktop.jpg") center no-repeat;
   }
   .catalog-products__description {
     height: 195px;
@@ -2087,7 +2087,7 @@ img {
   .catalog-products__img-video {
     width: 682px;
     height: 455px;
-    background: url("../../img/video-desktop.jpg") center no-repeat;
+    background: url("../img/video-desktop.jpg") center no-repeat;
   }
   .catalog-products__img-video::before {
     top: 185px;
