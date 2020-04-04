@@ -1,0 +1,115 @@
+.experience {
+  margin: 0 0 90px 0;
+  background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
+  background-position: center top, center -40px;
+  background-repeat: no-repeat;
+}
+
+.experience__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 50px 15px 0 15px;
+  font-family: 'Cambria', serif;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.experience__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 400;
+}
+
+.experience__text {
+  margin: 11px 0;
+  font-size: 14px;
+}
+
+.experience__tabl-title {
+  margin: 30px 0 15px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.company {
+  border-collapse: collapse;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  tr:not(:first-child) {
+    height: 65px;
+  }
+  th {
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid $red-color;
+  }
+  td {
+    padding: 0 5px 0 5px;
+    font-style: normal;
+    font-size: 9px;
+    border: 1px solid $red-color;
+    line-height: 14px;
+  }
+}
+
+.company__no-logo {
+  font-weight: 700;
+}
+
+.company__kma-logo {
+  background: url(../img/kma.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.company__hcb-logo {
+  background: url(../img/HCB.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.company__leto-logo {
+  background: url(../img/letonew.png) no-repeat center;
+  background-size: contain;
+}
+
+@media (min-width: $desktop-width) {
+  .experience__wrapper {
+    width: 982px;
+    padding: 50px 109px 0 109px;
+  }
+
+  .experience__title {
+    font-size: 21px;
+  }
+
+  .experience__text {
+    margin: 5px 0;
+    font-size: 17px;
+  }
+
+  .experience__tabl-title {
+    margin: 35px 0 20px 0;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .company {
+    margin: 0 auto 40px auto;
+    tr:not(:first-child) {
+      height: 100px;
+    }
+    th {
+      font-size: 16px;
+      font-style: normal;
+      border: 1px solid $red-color;
+    }
+    td {
+      padding: 20px;
+      font-style: normal;
+      font-size: 15px;
+      border: 1px solid $red-color;
+      line-height: 14px;
+    }
+  }
+}

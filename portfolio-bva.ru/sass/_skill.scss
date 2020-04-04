@@ -1,0 +1,294 @@
+.skill {
+  background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
+  background-position: center top, center -40px;
+  background-repeat: no-repeat;
+}
+
+.skill__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 50px 15px 0 15px;
+}
+
+.skill__title {
+  font-family: 'Cambria', serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.skill__list {
+  list-style: none;
+  font: 12px "Helvetica Neue", Arial, sans-serif;
+  margin: 50px 0;
+  padding: 0;
+	position: relative;
+  line-height: 2em;
+  li {
+    margin-bottom:50px; 
+    background:#e9e5e2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+    background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+    height:20px; 
+    border-radius:10px; 
+    -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+    -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+    box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+    h3 {
+      position:relative; 
+      top:-27px;
+      left: 10px;
+    }
+  }
+}
+
+.skill__bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height:18px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+  box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+  span {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 4.5px;
+    -moz-animation: showtext 2s forwards;
+    -webkit-animation: showtext 2s forwards;
+  }
+}
+
+@-moz-keyframes showtext {
+  0%, 99% { color:transparent;}
+  100% { color:#fff;}
+}
+@-webkit-keyframes showtext {
+  0%, 99% { color:transparent;}
+  100% { color:#fff;}
+}
+
+.skill__bar--html-css {
+	width:85%; 
+	animation: html-css 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+@keyframes html-css {
+  0%  { width:0px;} 
+  100%{ width:85%;}  
+}
+
+.skill__bar--sass-less {
+	width:78%; 
+	animation: sass-less 2s ease-out;
+	background-color: #a1ce5b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+@keyframes sass-less {
+  0%  { width:0px;} 
+  100%{ width:78%;}  
+}
+
+.skill__bar--git {
+	width:76%; 
+	animation: git 2s ease-out;
+	background-color: #f0bb4b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+@keyframes git {
+  0%  { width:0px;} 
+  100%{ width:76%;}  
+}
+
+.skill__bar--gulp {
+	width:70%; 
+	animation: gulp 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba);
+}
+
+@keyframes gulp {
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+
+
+.skill__bar--svg {
+	width:55%; 
+	animation: svg 2s ease-out;
+	background-color: #FF7F50;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF7F50), to(#FF7F50));
+	background-image: -webkit-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -moz-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -ms-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -o-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: linear-gradient(top, #FF7F50, #FF7F50);
+}
+
+@keyframes svg {
+  0%  { width:0px;} 
+  100%{ width:55%;}  
+}
+
+.skill__bar--js {
+	width:20%; 
+	animation: js 2s ease-out;
+	background-color: #008000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#008000), to(#228B22));
+	background-image: -webkit-linear-gradient(top, #008000, #228B22);
+	background-image: -moz-linear-gradient(top, #008000, #228B22);
+	background-image: -ms-linear-gradient(top, #008000, #228B22);
+	background-image: -o-linear-gradient(top, #008000, #228B22);
+	background-image: linear-gradient(top, #008000, #228B22);
+}
+
+@keyframes js {
+  0%  { width:0px;} 
+  100%{ width:20%;}  
+}
+
+
+.skill__bar--ps {
+	width:19%; 
+	animation: ps 2s ease-out;
+	background-color: #DAA520;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DAA520), to(#B8860B));
+	background-image: -webkit-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -moz-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -ms-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -o-linear-gradient(top, #DAA520, #B8860B);
+	background-image: linear-gradient(top, #DAA520, #B8860B);
+}
+
+@keyframes ps {
+  0%  { width:0px;} 
+  100%{ width:19%;}  
+}
+
+.skill__bar--php {
+	width:5%; 
+	animation: php 2s ease-out;
+	background-color: #00BFFF;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00BFFF), to(#87CEFA));
+	background-image: -webkit-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -moz-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -ms-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -o-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: linear-gradient(top, #00BFFF, #87CEFA);
+}
+
+@keyframes php {
+  0%  { width:0px;} 
+  100%{ width:5%;}  
+}
+
+.algorithm, .algorithm__base {
+  list-style: none;
+  counter-reset: li;
+}
+
+.algorithm li::before, .algorithm__base li::before {
+  counter-increment: li;
+  content: counters(li,'.') '. ';
+  font-weight: 900;
+}
+
+.skill__text {
+  font-family: 'Cambria', serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0 0 90px 0;
+  ol {
+    margin: 0;
+    padding: 0;
+    .algorithm__base {
+      padding: 0 0 0 12px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .skill__wrapper {
+    width: 982px;
+    padding: 50px 109px 0 109px;
+  }
+
+  .skill__title {
+    font-family: 'Cambria', serif;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .skill__list {
+    width: 70%;
+    margin: 50px auto 50px auto;
+    li {
+      margin-bottom:40px;
+      height: 25px; 
+    }
+  }
+
+  .skill__bar {
+    height: 23px;
+    span {
+      font-size: 17px;
+      padding: 3px;
+    }
+  }
+
+  .skill__text {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto 90px auto;
+    width: 90%;
+    ol {
+      margin: 0;
+      padding: 0;
+      .algorithm__base {
+        padding: 0 0 0 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.works {
+  padding: 0 0 100px 0;
+  min-height: 100px;
+
+  background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
+  background-position: center top, center -40px;
+  background-repeat: no-repeat;
+}
+
+.works__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.works__title {
+  margin: 0 0 15px 0;
+  padding: 70px 0 0 5px;
+
+  font-family: 'Cambria', serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.works__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+  margin: 0 0 15px 0;
+  width: 137.5px;
+  height: 171.5px;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.works__item--mishka {
+  background: url(../img/mishka.png) no-repeat center;
+  background-size: cover;
+}
+
+.works__item--midgard {
+  background: url(../img/midgard.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.works__wrapper-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.works__link {
+  display: block;
+
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
+  background: $red-color;
+  outline: none;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    color: $red-color;
+    background: #fff;
+    transition: 0.2s;
+  }
+}
+
+.works__link--project {
+  padding: 5px 18px 5px 18px;
+  margin-left: 5px;
+}
+
+.works__link--github {
+  padding: 5px 11.5px 5px 11.5px;
+  margin-right: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .works {
+    padding: 0 0 140px 0;
+  }
+
+  .works__wrapper {
+    width: 982px;
+    padding: 0 109px;
+  }
+
+  .works__title {
+    padding: 70px 0 0 7.5px;
+    font-size: 19px;
+  }
+
+  .works__list {
+    justify-content: flex-start;
+  }
+
+  .works__item {
+    position: relative;
+    margin: 7.5px;
+    width: 175px;
+    height: 175px;
+
+    overflow-y: hidden;
+    &:hover {
+      .works__wrapper-link {
+        transform: translateY(-40px);
+      }
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+  }
+
+  .works__wrapper-link {
+    position: absolute;
+    bottom: -40px;
+    width: 175px;
+    transition: 0.5s all;
+  }
+
+  .works__link--project {
+    padding: 5px 27.5px 5px 27.5px;
+    margin-left: 5px;
+    background: $red-color;
+  }
+  
+  .works__link--github {
+    padding: 5px 21px 5px 21px;
+    margin-right: 5px;
+    background: $red-color;
+  }
+}

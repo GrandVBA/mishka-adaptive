@@ -1,0 +1,40 @@
+.head-description {
+  z-index: 5;
+}
+
+.head-description__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100px;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.head-description__title {
+  display: block;
+  margin: 0;
+
+  font-family: 'Cambria', serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .head-description__wrapper {
+    min-height: 140px;
+    width: 982px;
+    padding: 0 109px;
+  }
+
+  .head-description__title {
+    width: 490px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
